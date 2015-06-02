@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package>
+  <name>itu_agv</name>
+  <version>0.0.0</version>
+  <description>The it_agv metapackage</description>
+
+  <maintainer email="aye@itu.edu.tr">emreay</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export>
+     <metapackage />
+  </export>
+</package>
+
