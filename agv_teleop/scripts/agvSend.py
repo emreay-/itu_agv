@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import rospy
-from agv.msg import uint8Array
+from agv_msgs.msg import uint8Array
 import struct
 import serial
 
@@ -9,7 +9,7 @@ def callback(data):
     port.write(data.data)
 
 def agvSend():
-    rospy.init_node('agvSendTest', anonymous=True)
+    rospy.init_node('agvSend', anonymous=True)
     rospy.Subscriber("wheel_values", uint8Array, callback)
     # spin() simply keeps python from exiting until this node is stopped
     rospy.spin()
